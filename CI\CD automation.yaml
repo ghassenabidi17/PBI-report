@@ -1,0 +1,11 @@
+name: Deploy Power BI Report
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy Power BI
+        run: echo "Deploying Power BI report"
